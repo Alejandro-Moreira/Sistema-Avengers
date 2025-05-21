@@ -1,11 +1,11 @@
 public class Avengers {
-    private String id;
+    private int id;
     private String nombre;
     private String mision;
     private int nivelPeligrosidad;
     private double pagoMensual;
 
-    public Avengers(String id, String nombre, String mision, int nivelPeligrosidad, double pagoMensual) {
+    public Avengers(int id, String nombre, String mision, int nivelPeligrosidad, double pagoMensual) {
         this.id = id;
         this.nombre = nombre;
         this.mision = mision;
@@ -13,11 +13,11 @@ public class Avengers {
         this.pagoMensual = pagoMensual;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
