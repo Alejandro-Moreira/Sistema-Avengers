@@ -26,6 +26,17 @@ public class GestionAvengers {
         }
         throw new Exception("Avenger no encontrado.");
     }
+
+    //Metodo para buscar por nombre
+    public Avengers buscarPorNombre(String nombre) {
+        for (Avengers a : avengers) {
+            if (a.getNombre().equalsIgnoreCase(nombre)) {
+                return a;
+            }
+        }
+        return null;
+    }
+
     //Metodo para mostrar
     public ArrayList<Avengers> listarAvengers() {
         return avengers;

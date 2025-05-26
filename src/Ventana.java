@@ -19,6 +19,7 @@ public class Ventana {
     private JButton btnEditar;
     private JButton btnMostrar;
     private JButton btnAporte;
+    private JButton btnBuscar;
     private GestionAvengers g=new GestionAvengers();
 
     public Ventana() {
@@ -85,6 +86,25 @@ public class Ventana {
             }
         });
 
+        btnBuscar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String nombreBuscado = txtNombre.getText().trim();
+                if (nombreBuscado.isEmpty()) {
+                    txtListado.setText("Por favor ingrese un nombre para buscar.");
+                    return;
+                }
+
+                Avengers encontrado = g.buscarPorNombre(nombreBuscado);
+                if (encontrado != null) {
+                    txtListado.setText(String.format("Avenger encontrado:\nID: %d\nNombre: %s\nMisión: %s\nPeligrosidad: %d\nPago: %.2f",
+                            encontrado.getId(), encontrado.getNombre(), encontrado.getMision(),
+                            encontrado.getNivelPeligrosidad(), encontrado.getPagoMensual()));
+                } else {
+                    txtListado.setText("Avenger no encontrado.");
+                }
+            }
+        });
     }
 
     public static void main(String[] args) {
