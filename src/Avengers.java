@@ -12,44 +12,5 @@ public class Avengers {
         this.nivelPeligrosidad = nivelPeligrosidad;
         this.pagoMensual = pagoMensual;
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getMision() {
-        return mision;
-    }
-
-    public void setMision(String mision) {
-        this.mision = mision;
-    }
-
-    public int getNivelPeligrosidad() {
-        return nivelPeligrosidad;
-    }
-
-    public void setNivelPeligrosidad(int nivelPeligrosidad) {
-        this.nivelPeligrosidad = nivelPeligrosidad;
-    }
-
-    public double getPagoMensual() {
-        return pagoMensual;
-    }
-
-    public void setPagoMensual(double pagoMensual) {
-        this.pagoMensual = pagoMensual;
-    }
-}
+// Source moved to src/main/java/Avengers.java
+// This file is left for compatibility; actual sources are in src/main/java/
