@@ -1,9 +1,4 @@
 # Sistema-Avengers
-
-<<<<<<< HEAD
-=======
-Proyecto Java sencillo.
-
 **Resumen:**
 - Este repo contiene el código Java y un workflow de GitHub Actions que, en cada push a `main`, compila y ejecuta los tests con Maven.
 
